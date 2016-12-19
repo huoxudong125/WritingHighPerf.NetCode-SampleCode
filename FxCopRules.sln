@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FxCopRules", "FxCopRules\FxCopRules.csproj", "{4893A72A-DD14-496F-BA2D-29C36C5D791B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FxCopViolator", "FxCopViolator\FxCopViolator.csproj", "{F77AC36E-5CA4-465A-91AD-3992B127EFD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2797D311-3F4E-4BC1-A10B-BB8FC78F93FE}"
+	ProjectSection(SolutionItems) = preProject
+		FxCopReadMe.txt = FxCopReadMe.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4893A72A-DD14-496F-BA2D-29C36C5D791B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4893A72A-DD14-496F-BA2D-29C36C5D791B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4893A72A-DD14-496F-BA2D-29C36C5D791B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4893A72A-DD14-496F-BA2D-29C36C5D791B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F77AC36E-5CA4-465A-91AD-3992B127EFD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F77AC36E-5CA4-465A-91AD-3992B127EFD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F77AC36E-5CA4-465A-91AD-3992B127EFD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F77AC36E-5CA4-465A-91AD-3992B127EFD7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

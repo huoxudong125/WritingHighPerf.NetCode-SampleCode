@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Rules FriendlyName="Custom Rules">
+  <Rule TypeName="DisallowStaticFieldsRule" Category="Custom.Arbitrary" CheckId="HP100">
+    <Name>StaticFieldsNotAllowed</Name>
+    <Description>Static fields are not allowed because they lead to problems with thread safety.</Description>
+    <Url>http://internaldocumentationsite/FxCop/HP100</Url>
+    <Resolution>Make the static field '{0}' either readonly or const.</Resolution>
+    <MessageLevel Certainty="90">Error</MessageLevel>
+    <FixCategories>Breaking</FixCategories>
+    <Email>ben@benwatson.org</Email>
+    <Owner>Ben Watson</Owner>
+  </Rule>
+
+  <Rule TypeName="DisallowStringCaseConversionRule" Category="Custom.Arbitrary" CheckId="HP101">
+    <Name>StringCaseConversionNotAllowed</Name>
+    <Description>You should not call String.ToLower or String.ToUpper as this leads to more time spent in GC.</Description>
+    <Url>http://internaldocumentationsite/FxCop/HP101</Url>
+    <Resolution>Remove the call to ToLower or ToUpper from '{0}'. If you need to compare strings, use a case-insensitive comparer instead.</Resolution>
+    <MessageLevel Certainty="90">Error</MessageLevel>
+    <FixCategories>Breaking</FixCategories>
+    <Email></Email>
+    <Owner></Owner>
+  </Rule>
+
+  <Rule TypeName="DisallowThreadCreationRule" Category="Custom.Arbitrary" CheckId="HP102">
+    <Name>DirectThreadCreationNotAllowed</Name>
+    <Description>You should not create Thread objects directly. Use the .Net thread pool instead.</Description>
+    <Url>http://internaldocumentationsite/FxCop/HP102</Url>
+    <Resolution>Do not create threads directly.</Resolution>
+    <MessageLevel Certainty="90">Error</MessageLevel>
+    <FixCategories>Breaking</FixCategories>
+    <Email></Email>
+    <Owner></Owner>
+  </Rule>
+</Rules>
